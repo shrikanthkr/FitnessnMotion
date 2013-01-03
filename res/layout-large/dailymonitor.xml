@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headnew1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbar" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/list_icon" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/button1"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/search_icon" />
+
+        <EditText
+            android:id="@+id/search_editText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:background="@drawable/customsearch"
+            android:cursorVisible="true"
+            android:focusableInTouchMode="true"
+            android:textSize="14dp" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/lin"
+    android:layout_width="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/relative1"
+  >
+    <com.phoenix.fitness.DragNDropListView
+        android:id="@+id/food_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:textFilterEnabled="true"
+        android:background="@drawable/customshape"
+        android:divider="#f1f1f1"
+        android:dividerHeight="0.5dp"
+        android:layout_centerHorizontal="true"
+        >
+        
+    </com.phoenix.fitness.DragNDropListView>
+</LinearLayout>
+<RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/headnew2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbar"
+            android:visibility="gone"
+             />
+<Button
+    android:id="@+id/button_done_dailymonitor"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/add_food_icon"
+    android:visibility="gone"
+    />
+</RelativeLayout>
+
+</RelativeLayout>

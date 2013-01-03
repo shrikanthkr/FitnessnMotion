@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headnew1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbar" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/seperator" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_marginLeft="25dp"
+            android:text="Select Workout"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+	<RelativeLayout
+	    android:layout_width="170dp"
+	    android:layout_height="match_parent"
+	    android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relative1"
+        android:layout_marginTop="25dp"
+	    >
+    <Button
+        android:id="@+id/button_run"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/running_icon"
+         />
+
+    <Button
+        android:id="@+id/button_cycle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/button_run"
+        android:layout_below="@+id/button_run"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bicycle_icon" />
+
+    <Button
+        android:id="@+id/button_gym"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/button_cycle"
+        android:layout_below="@+id/button_cycle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gym_icon" />
+
+    <Button
+        android:id="@+id/button_sports"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/button_gym"
+        android:layout_below="@+id/button_gym"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sports_icon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_run"
+        android:layout_alignBottom="@+id/button_run"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/button_run"
+        android:text="Running"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_cycle"
+        android:layout_alignBottom="@+id/button_cycle"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Cycling"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_gym"
+        android:layout_alignBottom="@+id/button_gym"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Gym"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_sports"
+        android:layout_alignBottom="@+id/button_sports"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="Sports"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+</RelativeLayout>
+</RelativeLayout>

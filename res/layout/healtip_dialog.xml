@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/distancecov_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/customrow"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tv_bmilabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/avgspeed_tv"
+            android:text="BMI"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_bmilabel"
+            android:layout_marginRight="62dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+       <RelativeLayout
+           android:id="@+id/avgspeed_relative"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/distancecov_relative"
+           android:layout_centerInParent="true"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/customrow"
+           android:orientation="horizontal"
+           android:padding="8dp" >
+
+           <TextView
+               android:id="@+id/textview_summaryofhealthtip"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:text="Summary"
+               android:textColor="#000000"
+               android:textSize="16dp"
+               android:textStyle="bold" />
+       </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/distancecov_relative"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="Here is the summary of your workout"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+         />
+
+    <Button
+        android:id="@+id/button_ok_dialog"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/avgspeed_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/tickiconcustom" />
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headnew1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbar" />
+         <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/seperator" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_marginLeft="50dp"
+            android:text="Schedule"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relative1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:text="Select start Time"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/setSchedule_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/excercise_seekbar1"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tick_icon" />
+
+    <Button
+        android:id="@+id/time_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/scheduler_icon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/time_button"
+        android:layout_marginTop="45dp"
+        android:text="Select end Time"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/time_end_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/time_button"
+        android:background="@drawable/scheduler_icon"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/time_end_button"
+        android:layout_marginTop="35dp"
+        android:text="Use the seekbar to select a mode"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+         />
+
+
+    <SeekBar
+        android:id="@+id/excercise_seekbar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="29dp"
+        android:fitsSystemWindows="true"
+        android:max="100"
+        android:progress="10" />
+
+
+    <SeekBar
+        android:id="@+id/excercise_seekbar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/excercise_seekbar3"
+        android:layout_alignRight="@+id/excercise_seekbar3"
+        android:layout_alignTop="@+id/excercise_seekbar3"
+        android:fitsSystemWindows="true"
+        android:max="100"
+        android:progress="10" />
+
+
+    <SeekBar
+        android:id="@+id/excercise_seekbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/excercise_seekbar3"
+        android:layout_alignRight="@+id/excercise_seekbar3"
+        android:layout_alignTop="@+id/excercise_seekbar3"
+        android:fitsSystemWindows="true"
+        android:max="100"
+        android:progress="10" />
+
+    <TextView
+        android:id="@+id/textView_startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_toRightOf="@+id/time_button"
+        android:layout_marginLeft="25dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" 
+        android:text="00:00" />
+
+    <TextView
+        android:id="@+id/textView_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_startTime"
+        android:layout_alignTop="@+id/textView1"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" 
+        android:text="00:00" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setSchedule_button"
+        android:layout_centerHorizontal="true"
+        android:text="set"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/alarm_togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="ToggleButton"
+        android:textColor="#000000"
+        android:textOff="Alarm Off"
+        android:textOn="Alarm on"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/textView_exmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_endTime"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="5dp"
+        android:text="Moderate"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

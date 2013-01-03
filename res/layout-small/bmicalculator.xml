@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+     >
+     <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headnew1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbar" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/seperator" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_marginLeft="20dp"
+            android:text="BMI Calculator"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relative1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="15dp"
+        android:text="Hello"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:textSize="16dp"
+         />
+
+    <TextView
+        android:id="@+id/textView_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="user"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:textSize="16dp"
+         />
+    <RelativeLayout
+        android:id="@+id/height_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/customrow" 
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/relative1"
+        android:layout_marginTop="45dp"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/textView_heightlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/speed_textView"
+            android:text="Height" 
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/height_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_heightlabel"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView3"
+            android:layout_marginRight="10dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="cms"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/weight_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/customrow" 
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/height_relative"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/textView_weightlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Weight" 
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/weight_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_weightlabel"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_marginRight="14dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="Kgs"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/age_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/customrow" 
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/weight_relative"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/textView_agelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Age" 
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/age_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_agelabel"
+            android:layout_alignBottom="@+id/textView_agelabel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+   
+    <RelativeLayout
+        android:id="@+id/bmi_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/customrow" 
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/age_relative"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/textView_bmilabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="BMI" 
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/bmi_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_bmilabel"
+            android:layout_alignBottom="@+id/textView_bmilabel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/agebmirange_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/customrow" 
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/bmi_relative"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/textView_bmirangelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="BMI Range" 
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/bmirange_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_bmirangelabel"
+            android:layout_alignBottom="@+id/textView_bmirangelabel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:text="normal"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/agebmirange_relative"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/updateiconcustom" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_update"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:text="update values" />
+
+</RelativeLayout>
